@@ -4,7 +4,7 @@ class PowerStrip:
     
     def __init__(self, pins):
         self.pins = pins
-        self.pinsNum = len(pins) - 1
+        self.pinsNum = len(pins)
         self.appliances = {}
         self.States = {"on":io.LOW, "off":io.HIGH, True:io.LOW, False:io.HIGH}
         io.setwarnings(False)
